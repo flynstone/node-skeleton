@@ -1,12 +1,57 @@
+html {
+  --primary-color: #1c2331;
+  --accent-color: #3E4551;
+  --font-color: #f5f5f5;
+  --secondary-color: #3F729B;
+  --cell-color: #1c2a48;
+}
 
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: var(--primary-color);
+  color: var(--font-color);
+  font-family: "itc-benguiat",serif;
+  font-size: 16px;
 }
 
-header {
-  display: inline-flex;
+.navbar {
+  background: linear-gradient(to bottom, rgb(10, 66, 187), #345);
+  font-family: "itc-benguiat",serif;
+  color: var(--font-color);
   min-width: 100vw;
+}
+
+.action-button {
+  position: relative;
+  padding: 5px 15px;
+  margin: 0px 7px 7px 7px;
+  border-radius: 10px;
+  font-family: "itc-benguiat",serif;
+  font-size: 18px;
+  color: var(--xcore-font-color);
+}
+.green {
+  background: linear-gradient(to bottom, #11cc21, #00470c);
+  border-bottom: 3px solid #4e606e;
+}
+.red {
+  background: linear-gradient(to bottom, #be1010, #490e0e);
+  border-bottom: 3px solid #4e606e;
+}
+.orange {
+  background-color: #dd7834;
+  border-bottom: 3px solid #4e606e;
+}
+.blue {
+  background: linear-gradient(to bottom, #0ebbbb, #033380);
+  border-bottom: 3px solid #4e606e;
+}
+.action-button:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  -moz-transform: translate(0px, 5px);
+  border-bottom: 1px solid;
 }
