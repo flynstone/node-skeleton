@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcrypt');
-const { getUserByEmail } = require('../helpers/database');
 
 module.exports = () => {
   // load login/register page

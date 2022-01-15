@@ -55,3 +55,10 @@ body {
   -moz-transform: translate(0px, 5px);
   border-bottom: 1px solid;
 }
+
+main.my-form {
+  width: 100%;
+  max-width: 675px;
+  padding: 1rem;
+  margin: auto;
+} 
